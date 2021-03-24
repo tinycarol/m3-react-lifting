@@ -1,0 +1,44 @@
+.App {
+  width: 700px;
+  min-height: 500px;
+  margin: 0px auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 40px;
+  position: relative;
+  text-align: center;
+}
+
+.App label {
+  margin-right: 15px;
+  width: 100px;
+  text-align: right;
+}
+
+.App input {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  outline: none;
+  width: 70%;
+  font-family: inherit;
+  font-size: 0.7rem;
+}
+
+.App input:focus {
+  border: 1px solid var(--main-red);
+}
+
+@media(max-width: 700px) {
+  .App {
+    width: 100%;
+  }
+
+  .App form>div {
+    flex-direction: column;
+  }
+
+  .App label {
+    text-align: center;
+  }
+}
